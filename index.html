@@ -13,13 +13,19 @@
             background-image: url(Fotos/guarita1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
         }
     </style>
 </head>
 
 <body>
 
-    <div id="Home" class="container-fluid col-12 pt-2 pb-4 mt-0 bg-primary text-light text-center">
+    <div id="Home" class="container-fluid col-12 pt-2 pb-2 mt-0 bg-primary text-light text-center">
         <p class="text-end">Torres/RS</p>
         <h1>Casas e apartamentos de veraneio</h1>
         <h5>Venha curtir o verão bem acomodado na mais bela praia gaucha</h5>
@@ -37,10 +43,14 @@
                         <a class="nav-link" href="#cards">Casas/Apartamentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.google.com/maps/place/T%C3%B4rres+-+Torres,+RS,+95560-000/@-29.3426952,-49.7455719,14.25z/data=!4m6!3m5!1s0x9522697517c81113:0xbe8eea8037e095d7!8m2!3d-29.3383976!4d-49.728226!16zL20vMDk3dmp2">Localização</a>
+                        <a class="nav-link"
+                            href="https://www.google.com/maps/place/T%C3%B4rres+-+Torres,+RS,+95560-000/@-29.3426952,-49.7455719,14.25z/data=!4m6!3m5!1s0x9522697517c81113:0xbe8eea8037e095d7!8m2!3d-29.3383976!4d-49.728226!16zL20vMDk3dmp2">Localização</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.viagensecaminhos.com/2010/08/torres-rs.html">Turismo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Formulario.html">Cadastro</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -53,7 +63,7 @@
 
     <div class="d-flex justify-content-center align-items-center">
         <!-- Carousel -->
-        <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+        <div id="meuCarrossel" class="carousel slide col-11 mt-1" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -84,169 +94,111 @@
             </button>
         </div>
     </div>
-    <hr>
-    <h2 class="text-center text-white ">Conheça mais sobre nos</h2>
-
-    <div id="cards" class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
-        <div class="col-lg-4 col-md-10 m-md-auto p-md-3">
-            <div class="card">
-                <div class="d-flex justify-content-center align-items-center">
-                    <!-- Carousel -->
-                    <div id="cardCarrossel" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Fotos/ap2-5.webp" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Fotos/fotor_2023-5-24_11_11_29.jpg" alt="Chicago" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Fotos/quiosque.jpg" alt="New York" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarrossel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarrossel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+    <h2 class="text-center text-white text-decoration-underline m-3">Conheça mais sobre nos</h2>
+    <main>
+        <section id="cards" class="row justify-content-center text-center m-auto">
+            <div class="col-9 col-lg-4 col-md-5 mt-4">
+                <div class="card w-100 mx-auto">
+                    <img class="card-img-top" src="Fotos/fachada ap.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Apartamentos</h4>
+                        <p class="card-text">apartamentos de um quarto mobiliados com ar condicionado, cozinha completa,
+                            estacionamento fechado, WiFi, tv e quiosque com churrasqueira, permitido pets</p>
+                            <hr>
+                        <a href="Apartamentos.html" class="btn btn-outline-dark">Veja mais</a>
                     </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Apartamentos</h5>
-                    <p class="card-text">apartamentos de um quarto mobiliados com ar condicionado, cozinha completa,
-                        estacionamento fechado, WiFi, tv e quiosque com churrasqueira, permitido pets</p>
-                    <button type="button" class="btn btn-outline-dark">
-                        <a class="nav-link" href="Apartamentos.html">Veja mais</a>
-                    </button>
-                </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-10 m-md-auto p-md-3 ">
-            <div class="card">
-                <div class="d-flex justify-content-center align-items-center">
-                    <!-- Carousel -->
-                    <div id="cardCarrossel-1" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Fotos/casa praia/Casa-praia-sala (2).jpg" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Fotos/casa praia/Casa-praia-piscina.webp" alt="Chicago" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Fotos/casa praia/casa-praia-mar-definitivo.jpg" alt="New York" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarrossel-1"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarrossel-1"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+            <div class="col-9 col-lg-4 col-md-5 mt-4">
+                <div class="card w-100 mx-auto">
+                    <img class="card-img-top" src="Fotos/casa praia/Casa-praia-sala (2).jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Casa Astral</h4>
+                        <p class="card-text">Casa berira mar com 4 quartos,ar condicionado, cozinha completa, televisão,
+                            Wi-Fi, piscina, quiosque com churrasqueira, mesa de sinuca, maquina de lavar, lareira, permitido
+                            pets.</p>
+                            <hr>
+                        <a href="Casa-astral.html" class="btn btn-outline-dark">Veja mais</a>
                     </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Casa Astral beira-mar</h5>
-                    <p class="card-text">Casa berira mar com 4 quartos,ar condicionado, cozinha completa, televisão,
-                        Wi-Fi, piscina, quiosque com churrasqueira, mesa de sinuca, maquina de lavar, lareira, permitido
-                        pets. </p>
-                    <button type="button" class="btn btn-outline-dark">
-                        <a class="nav-link" href="Casa-astral.html">Veja mais</a>
-                    </button>
-                </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-10 m-md-auto p-md-3">
-            <div class="card h-100">
-                <div class="d-flex justify-content-center align-items-center">
-                    <!-- Carousel -->
-                    <div id="cardCarrossel-2" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Fotos/Caso-sala.jpg.jpg" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Fotos/Casa-cozinha.jpg.jpg" alt="Chicago" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Fotos/Casa quarto.jpg.jpg" alt="New York" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarrossel-2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarrossel-2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+            <div class="col-9 col-lg-4 col-md-5  mt-4">
+                <div class="card w-100  mx-auto">
+                    <img class="card-img-top" src="Fotos/fachada ap 1.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Open House</h4>
+                        <p class="card-text">Casa 2 quartos com cozinha completa, ar condicionado, televisão, Wi-Fi,
+                            maquina de lavar, quiosque com churrasqueira, permitido pets, ambiente tranquilo.</p>
+                            
+                            <hr>
+                            
+                        <a href="Open-House.html" class="btn btn-outline-dark">Veja mais</a>
                     </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Open House</h5>
-                    <p class="card-text ">Linda casa com 2 quartos com cozinha completa, ar condicionado, televisão, Wi-Fi,
-                        maquina de lavar, quiosque com churrasqueira, permitido pets.</p>
-                    <button type="button" class="btn btn-outline-dark">
-                        <a class="nav-link" href="Open-House.html">Veja mais</a>
-                    </button>
-                </div>
             </div>
-        </div>      
+            <div class="col-11 col-lg-8 col-md-5 mt-4">
+                <div class="card w-100 mx-auto">
+                    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div>
-    <div class="col-11 m-auto"></div>
-    <h2 class="text-center"></h2>
-    <div class="col-1 m-auto" style="border: solid;">
-        <i class="fa-brands fa-whatsapp font" style="font-size: 30px;"></i>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Fotos/torres-ideal.jpg" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="Fotos/Guarita.jpg" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="Fotos/balonismo.jpg" alt="New York" class="d-block w-100">
+      </div>
     </div>
-    <footer class="">
-        <div>
-            <a href=""></a>
-        </div>
-
-    </footer>
-
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
-
+<footer class="footer bg-dark text-white mt-5">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contato</h5>
+          <ul class="list-unstyled">
+            <li>Telefone : (51) 3664-1444</li>
+            <li>Celular :  (51) 997937258</li>
+            <li>Email: apartamentoberiario@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Redes Sociais</h5>
+          <ul class="list-inline me-5">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-white"></i></a></li>           
+            <li class="list-inline-item"><a href="https://www.instagram.com/apartamentosbeirario/"><i class="fab fa-instagram text-white"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2023 Apartamentos Beira Rio. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 </html>
